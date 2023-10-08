@@ -3,6 +3,7 @@
 const UserStorage = require("../../models/UserStorage");
 const User = require("../../models/User");  //gpt code
 
+// 아이디, 비밀번호, 회원가입
 const output = {
     hello: (req, res)=> {
         res.render("home/index");
@@ -11,6 +12,9 @@ const output = {
     login: (req, res)=> {
         res.render("home/login");
     },
+    register: (req, res)=> {
+        res.render("home/register");
+    }
 };
 
 const process = {
