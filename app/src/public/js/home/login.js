@@ -1,3 +1,4 @@
+// 프론트엔드
 "use strict";
 
 const id = document.querySelector("#id"),
