@@ -6,10 +6,13 @@ const router = express.Router();
 const ctrl = require("./home.ctrl");
 
 // "/" 라우트
-router.get("/", ctrl.hello);
+router.get("/", ctrl.output.hello);
 
 // "/login" 라우트
-router.get("/login", ctrl.login);
+router.get("/login", ctrl.output.login);
+
+// post api
+router.post("/login", ctrl.process.login);
 
 
 module.exports = router;
