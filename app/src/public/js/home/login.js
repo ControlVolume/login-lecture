@@ -9,8 +9,14 @@ const id = document.querySelector("#id"),
     function login() {
         const req = {
             id: id.value,
-            pasword: pasword.value,
+            psword: psword.value,
         };
-
-        console.log(req);
+        
+        fetch("/login", {
+            method: "POST",
+            headers: {
+                "Content-Type": "appication/json",
+            },
+            body: JSON.stringify(req),
+        });
     }
