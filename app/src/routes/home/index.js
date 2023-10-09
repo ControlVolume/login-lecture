@@ -12,11 +12,13 @@ router.get("/", ctrl.output.hello);
 // "/login" 라우트
 router.get("/login", ctrl.output.login);
 
-//
+// 회원가입 등록
 router.get("/register", ctrl.output.register);
 
-// post api
+// login post api
 router.post("/login", ctrl.process.login);
 
+// register post api
+router.post("/register", ctrl.process.register);
 
 module.exports = router;
