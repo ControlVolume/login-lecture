@@ -18,7 +18,7 @@ router.get("/register", ctrl.output.register);
 // login post api
 router.post("/login", ctrl.process.login);
 
-// register post api
+// register post api(요청)
 router.post("/register", ctrl.process.register);
 
 module.exports = router;
